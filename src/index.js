@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom';
 import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
+const printHello = () => console.log("Hello!!!")
+
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={printHello} />
   </div>,
   document.getElementById('root')
 );
